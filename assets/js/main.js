@@ -101,6 +101,6 @@
   });
 
  $('.scrolly').scrolly({
-  speed: 700, // Lower this for faster scroll
+  speed: 400, // Lower this for faster scroll
   offset: 0
 });
