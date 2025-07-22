@@ -81,3 +81,22 @@
 		}
 
 })(jQuery);
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const spotlight = document.querySelector('.spotlight');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // stop observing after it's visible
+        }
+      });
+    }, { threshold: 0.1 }); // trigger when 10% visible
+
+    if (spotlight) {
+      observer.observe(spotlight);
+    }
+  });
+

@@ -1,0 +1,75 @@
+.soft-card-section {
+  background: #1b1f24;
+  padding: 4rem 1rem;
+  color: #eaeaea;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.soft-card-section h2 {
+  color: #ffffff;
+}
+
+.container.founder-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.founder-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.founder-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.founder-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.founder-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.founder-role {
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.founder-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.founder-social a {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.founder-social a:hover {
+  color: #00c6ff;
+}
+
+@media (max-width: 768px) {
+  .container.founder-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-image img {
+    max-width: 220px;
+  }
+}
