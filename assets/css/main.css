@@ -4137,3 +4137,8 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+.scrolly {
+  will-change: transform;
+  transform: translateZ(0);
+}
